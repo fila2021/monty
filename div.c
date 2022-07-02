@@ -32,7 +32,7 @@ void _div(stack_t **stack, unsigned int num_line)
 	}
 	else
 	{
-		dprintf (2, "L%u: can't div, stack too short\n", num_line);
+		vprintf (2, "L%u: can't div, stack too short\n", num_line);
 		free(global.line);
 		fclose(global.fil);
 		free_l(stack);
